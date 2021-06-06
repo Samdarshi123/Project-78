@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      Family Book
+    </title>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <h1>
+      Family Book
+    </h1>
+    <hr>
+    <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_img">
+    <br>
+    <br>
+    <h3 id="one">
+      Our Family Book
+    </h3>
+    <br>
+    <br>
+    <button type="button" onclick="family()">
+      Next
+    </button>
+    <hr>
+    <script>
+    var names=[
+       "1. My Father (Sutikshna Mishra)",
+       "2. My Mother (Kumari Prabina)",
+       "3. My Sister (Aditi Kumari)",
+       "4. Me (Samdarshi)"
+    ]
+    var images=[
+      "https://i.pinimg.com/originals/87/b8/3b/87b83ba77a10a1d3313ed7872918524d.jpg",
+      "https://us.123rf.com/450wm/kinokotagawa/kinokotagawa1712/kinokotagawa171200465/91961518-mom-wearing-short-sleeve-clothes-is-pointing.jpg?ver=6",
+      "https://us.123rf.com/450wm/yupiramos/yupiramos1905/yupiramos190505227/122760736-little-girl-avatar-character-vector-illustration-design.jpg?ver=6",
+      "https://i.pinimg.com/originals/61/2c/b7/612cb73d4284b091530ef6dda0993021.jpg"
+    ]
+    var i=0;
+    function family(){
+      document.getElementById("one").innerHTML=names[i];
+      document.getElementById("family_img").src=images[i];
+      i++
+      if(i==4){
+        i=0;
+      }
+    }
+    </script>
+  </body>
+</html>
